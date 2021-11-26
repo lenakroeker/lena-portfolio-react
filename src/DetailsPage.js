@@ -72,15 +72,19 @@ const Img = styled.img`
 
 const Info = styled.div`
   grid-area: Info;
-  margin: 20px 0 20px 50px;
+  margin: 0px 0 20px 50px;
   text-align: center;
-  line-height: 3em; ;
+  line-height: 2.5em; ;
 `;
 
 const Title = styled.h2``;
 
-const Date = styled.div``;
-const Materials = styled.div``;
+const Date = styled.div`
+  margin-top: -20px;
+`;
+const Materials = styled.div`
+  font-style: italic;
+`;
 const Dimens = styled.div``;
 const About = styled.div`
   line-height: 1.3em;
@@ -90,6 +94,7 @@ const About = styled.div`
 const Sold = styled.div``;
 const Price = styled.div``;
 const Contact = styled(Link)`
+  margin: 20px 20px;
   background-color: black;
   color: white;
   padding: 10px 20px;
@@ -100,6 +105,9 @@ const Contact = styled(Link)`
 `;
 const A = styled.a`
   color: blue;
+  &:hover {
+    background-color: green;
+  }
 `;
 
 export default DetailsPage;
