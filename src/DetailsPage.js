@@ -22,14 +22,13 @@ export const DetailsPage = ({ shopdata }) => {
                     <Date>{list.date}</Date>
                     <Dimens>{list.dimensions}</Dimens>
                     <Materials>{list.materials}</Materials>
+                    <About>{list.about}</About>
                     <About>
-                      {list.about}
-                      <br /> 30% of proceeds will be donated to{" "}
+                      Until Dec 31st, 30% of proceeds from each sale will be
+                      donated to{" "}
                       <A href="https://banquesalimentaires.org/en/">
                         Food Banks of Quebec
                       </A>{" "}
-                      <br />
-                      Happy Holidays!
                     </About>
 
                     {list.sold ? (
@@ -37,6 +36,10 @@ export const DetailsPage = ({ shopdata }) => {
                     ) : (
                       <>
                         <Price>${list.price}</Price>
+                        <PriceInfo>
+                          (Includes regular shipping to most areas of Canada)
+                        </PriceInfo>
+
                         <Contact exact to={`/contact/${list.title}`}>
                           Contact to Purchase
                         </Contact>
@@ -64,6 +67,7 @@ const Main = styled.div``;
 const Box = styled.div`
   width: 100%;
   height: 80vh;
+  margin: 0px 50px;
   display: flex;
   justify-content: center;
   @media (max-width: 768px) {
@@ -72,6 +76,7 @@ const Box = styled.div`
 `;
 
 const Img = styled.img`
+  width: 80%;
   @media (max-width: 768px) {
     width: 100%;
     height: auto;
@@ -80,10 +85,10 @@ const Img = styled.img`
 `;
 
 const Info = styled.div`
-  grid-area: Info;
   margin: 0px 0 20px 50px;
   text-align: center;
-  line-height: 2.5em;
+  line-height: 2em;
+  width: 80%;
   @media (max-width: 768px) {
     width: 90%;
     margin: 5%;
@@ -105,7 +110,14 @@ const About = styled.div`
   text-align: left;
 `;
 const Sold = styled.div``;
-const Price = styled.div``;
+const Price = styled.div`
+  line-height: 1.5em;
+`;
+const PriceInfo = styled.div`
+  color: grey;
+  margin-bottom: 30px;
+`;
+
 const Contact = styled(Link)`
   margin: 20px 20px;
   background-color: black;
