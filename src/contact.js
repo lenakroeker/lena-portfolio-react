@@ -120,21 +120,42 @@ const Form = styled.form`
   margin: auto;
   text-align: center;
   width: 40%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const Name = styled.input`
   width: 35%;
   margin-right: 5%;
+  width: 40%;
+  @media (max-width: 768px) {
+    width: 100%;
+    display: block;
+  }
 `;
 const Email = styled.input`
   width: 60%;
+  @media (max-width: 768px) {
+    width: 100%;
+    display: block;
+  }
 `;
 const TextArea = styled.textarea`
   display: block;
   width: 100%;
+  @media (max-width: 768px) {
+    width: 100%;
+    display: block;
+  }
 `;
 const Send = styled.button`
   width: 30%;
   margin-top: 10px;
+  @media (max-width: 768px) {
+    width: 70%;
+    margin: auto;
+    display: block;
+  }
 `;
 
 export default Contact;

@@ -13,7 +13,7 @@ export const DetailsPage = ({ shopdata }) => {
             .map((list) => (
               <div key={list.id}>
                 <Box>
-                  <img
+                  <Img
                     src={process.env.PUBLIC_URL + `${list.images}`}
                     height="100%"
                   />
@@ -48,13 +48,15 @@ export const DetailsPage = ({ shopdata }) => {
             ))}
         </Info>
       </Main>
+      <Footer></Footer>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
   margin: auto;
-  width: 80%;
+  width: 100%;
+  padding: 20px 0;
 `;
 
 const Main = styled.div``;
@@ -63,18 +65,28 @@ const Box = styled.div`
   width: 100%;
   height: 80vh;
   display: flex;
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const Img = styled.img`
-  width: 100%;
-  grid-area: Image;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
 `;
 
 const Info = styled.div`
   grid-area: Info;
   margin: 0px 0 20px 50px;
   text-align: center;
-  line-height: 2.5em; ;
+  line-height: 2.5em;
+  @media (max-width: 768px) {
+    width: 90%;
+    margin: 5%;
+  }
 `;
 
 const Title = styled.h2``;
@@ -102,12 +114,20 @@ const Contact = styled(Link)`
   &:hover {
     background-color: darkgreen;
   }
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
 `;
 const A = styled.a`
   color: blue;
   &:hover {
     background-color: green;
   }
+`;
+
+const Footer = styled.div`
+  height: 90px;
+  width: 100%;
 `;
 
 export default DetailsPage;

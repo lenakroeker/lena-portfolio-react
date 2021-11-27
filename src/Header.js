@@ -67,15 +67,18 @@ export const Header = () => {
         </MenuList>
       </Menu>
       <MenuDrop>
+        <ImgLink exact to="/">
+          <Img src={Sig} />
+        </ImgLink>
         <DropBtn onClick={() => dropHandle()}>Menu</DropBtn>
         {dropOpen && (
           <DropdownContent onClick={() => dropHandle()}>
             <DropItem exact to="/">
               Home
             </DropItem>
-            <DropItem exact to="/shop">
+            <DropItemB exact to="/shop">
               Shop
-            </DropItem>
+            </DropItemB>
             <DropItem exact to="/paint">
               Paint
             </DropItem>
@@ -95,7 +98,10 @@ export const Header = () => {
               Early Work
             </DropItem>
             <DropItem exact to="/about">
-              about
+              About
+            </DropItem>
+            <DropItem exact to="/contact">
+              Contact
             </DropItem>
           </DropdownContent>
         )}
@@ -109,12 +115,12 @@ const Wrapper = styled.div`
   padding: 10px;
   background-color: transparent;
   color: ${style.black};
-  width: 90vw;
+  width: 100vw;
   height: 150px;
   text-align: center;
   margin-bottom: 30px;
   @media (max-width: 768px) {
-    height: 50px;
+    height: 80px;
   }
 `;
 
@@ -122,9 +128,15 @@ const Img = styled.img`
   width: 100%;
   margin-left: 20px;
   grid-area: sig;
+  @media (max-width: 768px) {
+    width: 90px;
+    margin-left: 0px;
+  }
 `;
 
-const ImgLink = styled(NavLink)``;
+const ImgLink = styled(NavLink)`
+  display: block;
+`;
 const MenuItem = styled(NavLink)`
   color: ${style.black};
   padding: 10px 10px;
@@ -194,13 +206,14 @@ const DropBtn = styled.button`
   color: ${style.white};
   border-radius: 16px;
   cursor: pointer;
-  margin: 10px;
+  margin: 10px auto;
   font-size: 18px;
   padding: 5px 8px;
   width: 50vw;
   &:hover {
     background-color: ${style.white};
     color: ${style.black};
+    font-weight: bold;
   }
 `;
 
@@ -240,6 +253,23 @@ const DropItem = styled(NavLink)`
   animation: 0.5s ${drop} ease-in-out;
   &:hover {
     background: ${style.black};
+  }
+`;
+const DropItemB = styled(NavLink)`
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  width: 53vw;
+  background: ${style.white};
+  border: 6px solid ${style.black};
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  padding: 10px 10px;
+  margin: 0.5px 0;
+  animation: 0.5s ${drop} ease-in-out;
+  &:hover {
+    background: darkgreen;
   }
 `;
 
