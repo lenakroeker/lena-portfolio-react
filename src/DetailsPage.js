@@ -127,8 +127,10 @@ const A = styled.a`
 `;
 
 const Footer = styled.div`
-  height: 90px;
-  width: 100%;
+  @media (max-width: 768px) {
+    height: 90px;
+    width: 100%;
+  }
 `;
 
 export default DetailsPage;
