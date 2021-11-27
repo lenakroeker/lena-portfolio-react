@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 
 export const DetailsPage = ({ shopdata }) => {
   const { title } = useParams();
-  console.log(title);
   return (
     <Wrapper>
       <Main>

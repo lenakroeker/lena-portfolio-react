@@ -6,7 +6,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
 export const Contact = () => {
-  console.log(process.env.REACT_APP_SERVICE_ID);
   const {
     register,
     handleSubmit,
