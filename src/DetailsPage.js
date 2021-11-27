@@ -65,6 +65,7 @@ const Box = styled.div`
   width: 100%;
   height: 80vh;
   display: flex;
+  justify-content: center;
   @media (max-width: 768px) {
     display: block;
   }
