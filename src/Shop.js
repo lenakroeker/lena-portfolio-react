@@ -19,6 +19,8 @@ export const Shop = ({ shopdata }) => {
                   materials={item.materials}
                   about={item.about}
                   images={item.images}
+                  isForSale={item.isForSale}
+                  sold={item.sold}
                 />
               );
             })}

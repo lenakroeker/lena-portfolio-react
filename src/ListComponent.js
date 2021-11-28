@@ -2,16 +2,28 @@ import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 
 export const ListComponent = (props) => {
-  const { title, images } = props;
+  const { title, images, isForSale, sold } = props;
 
   return (
     <Wrapper>
-      <LinkBox exact to={`details/${title}`}>
-        <img src={process.env.PUBLIC_URL + `${images}`} height="250" />
-        <Main>
-          <div>Details</div>
-        </Main>
-      </LinkBox>
+      {isForSale ? (
+        <LinkBox exact to={`shop/details/${title}`}>
+          <img src={process.env.PUBLIC_URL + `${images}`} height="250" />
+          <Main>
+            <div>
+              Details
+              {sold ? <Sold>Sold</Sold> : <></>}
+            </div>
+          </Main>
+        </LinkBox>
+      ) : (
+        <LinkBox exact to={`details/${title}`}>
+          <img src={process.env.PUBLIC_URL + `${images}`} height="250" />
+          <Main>
+            <div>Details</div>
+          </Main>
+        </LinkBox>
+      )}
     </Wrapper>
   );
 };
@@ -40,6 +52,14 @@ const Main = styled.div`
   &:hover {
     opacity: 0.7;
   }
+`;
+
+const Sold = styled.div`
+  background-color: lightpink;
+  color: black;
+  padding: 2px 5px;
+  border-radius: 15px;
+  margin-top: 5px;
 `;
 
 export default ListComponent;

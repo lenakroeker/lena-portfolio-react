@@ -13,6 +13,7 @@ import Misc from "./Misc";
 import Shop from "./Shop";
 import EarlyWork from "./EarlyWork";
 import DetailsPage from "./DetailsPage";
+import ShopDetailsPage from "./ShopDetailsPage";
 import Contact from "./contact";
 import ShopData from "./data/shop";
 
@@ -56,6 +57,9 @@ function App() {
         </Route>
         <Route exact path="/details/:title">
           <DetailsPage shopdata={ShopData} />
+        </Route>
+        <Route exact path="/shop/details/:title">
+          <ShopDetailsPage shopdata={ShopData} />
         </Route>
       </Switch>
       <Footer></Footer>
