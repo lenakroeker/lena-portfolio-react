@@ -1,6 +1,6 @@
 export const data = [
   {
-    images: "/images/sale/berry-nb.jpg",
+    images: "/images/sale/berry-nb-min.jpg",
     title: "A Lone Red Berry on ice",
     date: "2021",
     dimensions: '8" X 8"',
@@ -15,7 +15,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/bows-nb.jpg",
+    images: "/images/sale/bows-nb-min.jpg",
     title: "A Clean Sweep",
     date: "2021",
     dimensions: '8" X 8"',
@@ -30,7 +30,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/clouds-nb.jpg",
+    images: "/images/sale/clouds-nb-min.jpg",
     title: "The Debutant Clouds",
     date: "2021",
     dimensions: '8" X 8"',
@@ -45,7 +45,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/dolphins-nb.jpg",
+    images: "/images/sale/dolphins-nb-min.jpg",
     title: "Dolphin Free",
     date: "2021",
     dimensions: '8" X 8"',
@@ -60,7 +60,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/floofs-nb.jpg",
+    images: "/images/sale/floofs-nb-min.jpg",
     title: "Seven Floofs in Deep Space",
     date: "2021",
     dimensions: '8" X 8"',
@@ -75,7 +75,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/ghost-nb.jpg",
+    images: "/images/sale/ghost-nb-min.jpg",
     title: "Little Ghost in Icecream Town",
     date: "2021",
     dimensions: '8" X 8"',
@@ -90,7 +90,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/lasers-nb.jpg",
+    images: "/images/sale/lasers-nb-min.jpg",
     title: "The Birth of Laser-Tag",
     date: "2021",
     dimensions: '8" X 8"',
@@ -105,7 +105,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/leaves-nb.jpg",
+    images: "/images/sale/leaves-nb-min.jpg",
     title: "Leaf of a Sumptuous House Plant",
     date: "2021",
     dimensions: '8" X 8"',
@@ -120,7 +120,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/meteor-nb.jpg",
+    images: "/images/sale/meteor-nb-min.jpg",
     title: "Detail of a Sentimental Marble",
     date: "2021",
     dimensions: '8" X 8"',
@@ -135,7 +135,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/no1-nb.jpg",
+    images: "/images/sale/no1-nb-min.jpg",
     title: "Corrosive Popsicle flavors",
     date: "2021",
     dimensions: '8" X 8"',
@@ -150,7 +150,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/splash.jpg",
+    images: "/images/sale/splash-min.jpg",
     title: "Submerged Baubles",
     date: "2021",
     dimensions: '8" X 8"',
@@ -165,7 +165,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/ocean-nb.jpg",
+    images: "/images/sale/ocean-nb-min.jpg",
     title: "Mid-Morning Wisps",
     date: "2021",
     dimensions: '8" X 8"',
@@ -180,7 +180,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/scoop-nb.jpg",
+    images: "/images/sale/scoop-nb-min.jpg",
     title: "a Robust tree in the Misty Woods",
     date: "2021",
     dimensions: '8" X 8"',
@@ -195,7 +195,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/slimer-nb.jpg",
+    images: "/images/sale/slimer-nb-min.jpg",
     title: "the Birth of Laser-Tag II",
     date: "2021",
     dimensions: '8" X 8"',
@@ -210,7 +210,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/snow-nb.jpg",
+    images: "/images/sale/snow-nb-min.jpg",
     title: "Detail of Partially-Whipped Whipping Cream",
     date: "2021",
     dimensions: '8" X 8"',
@@ -225,7 +225,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/submarine-nb.jpg",
+    images: "/images/sale/submarine-nb-min.jpg",
     title: "Estuary Bouquet",
     date: "2021",
     dimensions: '8" X 8"',
@@ -240,7 +240,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/sunset-nb.jpg",
+    images: "/images/sale/sunset-nb-min.jpg",
     title: "Half-Rewound Light",
     date: "2021",
     dimensions: '8" X 8"',
@@ -255,7 +255,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/violins-nb.jpg",
+    images: "/images/sale/violins-nb-min.jpg",
     title: "the Cacaphony of Daybreak",
     date: "2021",
     dimensions: '8" X 8"',
@@ -270,7 +270,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/washing-nb.jpg",
+    images: "/images/sale/washing-nb-min.jpg",
     title: "the Most Gentle Field",
     date: "2021",
     dimensions: '8" X 8"',
@@ -285,7 +285,7 @@ export const data = [
     tags: [],
   },
   {
-    images: "/images/sale/water-nb.jpg",
+    images: "/images/sale/water-nb-min.jpg",
     title: "Shallow-Sea Investigations",
     date: "2021",
     dimensions: '8" X 8"',
