@@ -1,12 +1,32 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import ListComponent from "./ListComponent";
 
-import Data from "./data/paintingsData";
-
-export const Garments = () => {
+export const Garment = ({ garmentdata }) => {
   return (
     <Wrapper>
-      <Title>Under Construction</Title>
+      <Title>Garment</Title>
+      <Gallery>
+        {garmentdata && garmentdata.length > 0 ? (
+          <>
+            {garmentdata.map((item) => {
+              return (
+                <ListComponent
+                  postId={item.id}
+                  title={item.title}
+                  dimensions={item.dimensions}
+                  date={item.date}
+                  materials={item.materials}
+                  about={item.about}
+                  images={item.images}
+                  category={item.category}
+                />
+              );
+            })}
+          </>
+        ) : (
+          <div>Failed to Load</div>
+        )}
+      </Gallery>
     </Wrapper>
   );
 };
@@ -27,4 +47,4 @@ const Gallery = styled.div`
   justify-content: center;
 `;
 
-export default Garments;
+export default Garment;

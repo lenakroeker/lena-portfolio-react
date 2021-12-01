@@ -1,19 +1,20 @@
 import styled from "styled-components";
 import { useParams, Link } from "react-router-dom";
 
-export const DetailsPage = ({ shopdata }) => {
+export const DetailsPage = ({ data }) => {
   const { title } = useParams();
+  console.log(title);
   return (
     <Wrapper>
       <Main>
         <Info>
-          {shopdata
+          {data
             .filter((list) => list.title === title)
             .map((list) => (
               <div key={list.id}>
-                <Box>
+                <Box key={list.name}>
                   <Img
-                    src={process.env.PUBLIC_URL + `${list.images}`}
+                    src={process.env.PUBLIC_URL + `${list.images[0]}`}
                     height="100%"
                   />
                   <Info>
@@ -22,28 +23,6 @@ export const DetailsPage = ({ shopdata }) => {
                     <Dimens>{list.dimensions}</Dimens>
                     <Materials>{list.materials}</Materials>
                     <About>{list.about}</About>
-                    <About>
-                      Until Dec 31st, 30% of proceeds from each sale will be
-                      donated to{" "}
-                      <A href="https://banquesalimentaires.org/en/">
-                        Food Banks of Quebec
-                      </A>{" "}
-                    </About>
-
-                    {list.sold ? (
-                      <Sold>Sold</Sold>
-                    ) : (
-                      <>
-                        <Price>${list.price}</Price>
-                        <PriceInfo>
-                          (Includes regular shipping to most areas of Canada)
-                        </PriceInfo>
-
-                        <Contact exact to={`/contact/${list.title}`}>
-                          Contact to Purchase
-                        </Contact>
-                      </>
-                    )}
                   </Info>
                 </Box>
               </div>

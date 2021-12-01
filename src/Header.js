@@ -7,6 +7,7 @@ import Insta from "./assets/header/insta.png";
 import Linkedin from "./assets/header/linkedin.png";
 import Codepen from "./assets/header/codepen.png";
 import GitHub from "./assets/header/github.png";
+import Gallea from "./assets/header/gallea.png";
 
 export const Header = () => {
   //dropdown for mobile
@@ -23,6 +24,12 @@ export const Header = () => {
           <Img src={Sig} />
         </ImgLink>
         <Social>
+          <a
+            href="https://www.gallea.ca/en/artists/lena-kroeker"
+            target="_blank"
+          >
+            <SocialImg src={Gallea} />
+          </a>
           <a href="https://www.instagram.com/lenakatrinak/" target="_blank">
             <SocialImg src={Insta} />
           </a>
@@ -52,9 +59,9 @@ export const Header = () => {
           <MenuItem exact to="/garment">
             Garment
           </MenuItem>
-          <MenuItem exact to="/misc">
+          {/* <MenuItem exact to="/misc">
             Misc
-          </MenuItem>
+          </MenuItem> */}
           <MenuItem exact to="/earlywork">
             Early Work
           </MenuItem>
@@ -91,9 +98,9 @@ export const Header = () => {
             <DropItem exact to="/music">
               Music
             </DropItem>
-            <DropItem exact to="/misc">
+            {/* <DropItem exact to="/misc">
               Misc
-            </DropItem>
+            </DropItem> */}
             <DropItem exact to="/earlywork">
               Early Work
             </DropItem>

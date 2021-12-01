@@ -1,12 +1,32 @@
 import styled, { keyframes } from "styled-components";
 import ListComponent from "./ListComponent";
 
-import Data from "./data/paintingsData";
-
-export const EarlyWork = () => {
+export const EarlyWork = ({ earlyworkdata }) => {
   return (
     <Wrapper>
-      <Title>Under Construction</Title>
+      <Title>Early Work</Title>
+      <Gallery>
+        {earlyworkdata && earlyworkdata.length > 0 ? (
+          <>
+            {earlyworkdata.map((item) => {
+              return (
+                <ListComponent
+                  postId={item.id}
+                  title={item.title}
+                  dimensions={item.dimensions}
+                  date={item.date}
+                  materials={item.materials}
+                  about={item.about}
+                  images={item.images}
+                  category={item.category}
+                />
+              );
+            })}
+          </>
+        ) : (
+          <div>Failed to Load</div>
+        )}
+      </Gallery>
     </Wrapper>
   );
 };

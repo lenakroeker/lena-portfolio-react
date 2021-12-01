@@ -1,6 +1,6 @@
 export const style = {
   // off white:
-  white: "rgb(247, 230, 228)",
+  white: "white",
   //off black
   black: "rgb(0, 0, 0)",
   //sky blue

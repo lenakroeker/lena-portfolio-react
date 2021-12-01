@@ -5,7 +5,7 @@ import style from "./styleConstants.js";
 const GlobalStyle = createGlobalStyle`
 ${reset}
   body {
-    background:  rgb(241, 248, 246);
+    background:  white;
     font-family: 'Poppins', sans-serif;
   }
 

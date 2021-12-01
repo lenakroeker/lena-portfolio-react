@@ -16,6 +16,8 @@ import DetailsPage from "./DetailsPage";
 import ShopDetailsPage from "./ShopDetailsPage";
 import Contact from "./contact";
 import ShopData from "./data/shop";
+import EarlyWorkData from "./data/earlywork";
+import GarmentData from "./data/garments";
 
 import About from "./About";
 
@@ -32,7 +34,7 @@ function App() {
           <Paintings />
         </Route>
         <Route exact path="/garment">
-          <Garments />
+          <Garments garmentdata={GarmentData} />
         </Route>
         <Route exact path="/textile">
           <Textiles />
@@ -47,7 +49,7 @@ function App() {
           <Shop shopdata={ShopData} />
         </Route>
         <Route exact path="/earlywork">
-          <EarlyWork />
+          <EarlyWork earlyworkdata={EarlyWorkData} />
         </Route>
         <Route exact path="/about">
           <About />
@@ -55,8 +57,11 @@ function App() {
         <Route exact path="/contact">
           <Contact />
         </Route>
-        <Route exact path="/details/:title">
-          <DetailsPage shopdata={ShopData} />
+        <Route exact path="/earlywork/details/:title">
+          <DetailsPage data={EarlyWorkData} />
+        </Route>
+        <Route exact path="/garment/details/:title">
+          <DetailsPage data={GarmentData} />
         </Route>
         <Route exact path="/shop/details/:title">
           <ShopDetailsPage shopdata={ShopData} />

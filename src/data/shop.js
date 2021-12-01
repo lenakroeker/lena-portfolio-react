@@ -9,7 +9,7 @@ export const data = [
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'.",
     id: 1,
     price: "80",
-    sold: false,
+    sold: true,
     isForSale: true,
     catagories: ["painting", "holiday2021"],
     tags: [],
@@ -37,7 +37,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 3,
     price: "80",
     sold: false,
     isForSale: true,
@@ -52,7 +52,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 4,
     price: "80",
     sold: true,
     isForSale: true,
@@ -67,7 +67,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 5,
     price: "80",
     sold: false,
     isForSale: true,
@@ -82,7 +82,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 6,
     price: "80",
     sold: false,
     isForSale: true,
@@ -97,7 +97,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 7,
     price: "80",
     sold: false,
     isForSale: true,
@@ -112,7 +112,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 8,
     price: "80",
     sold: false,
     isForSale: true,
@@ -127,7 +127,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 9,
     price: "80",
     sold: false,
     isForSale: true,
@@ -142,7 +142,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 10,
     price: "80",
     sold: false,
     isForSale: true,
@@ -157,7 +157,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 2,
+    id: 11,
     price: "80",
     sold: false,
     isForSale: true,
@@ -172,7 +172,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 12,
     price: "80",
     sold: false,
     isForSale: true,
@@ -187,7 +187,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 13,
     price: "80",
     sold: false,
     isForSale: true,
@@ -202,7 +202,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 14,
     price: "80",
     sold: false,
     isForSale: true,
@@ -217,7 +217,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 15,
     price: "80",
     sold: false,
     isForSale: true,
@@ -232,9 +232,9 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 16,
     price: "80",
-    sold: false,
+    sold: true,
     isForSale: true,
     catagories: ["painting", "holiday2021"],
     tags: [],
@@ -247,7 +247,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 17,
     price: "80",
     sold: false,
     isForSale: true,
@@ -262,9 +262,9 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 18,
     price: "80",
-    sold: false,
+    sold: true,
     isForSale: true,
     catagories: ["painting", "holiday2021"],
     tags: [],
@@ -277,7 +277,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 19,
     price: "80",
     sold: true,
     isForSale: true,
@@ -292,7 +292,7 @@ export const data = [
     materials: "Acrylic on Paper, Gallery Wood Panel",
     about:
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
-    id: 1,
+    id: 20,
     price: "80",
     sold: false,
     isForSale: true,

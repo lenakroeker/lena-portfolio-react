@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 
 export const ListComponent = (props) => {
-  const { title, images, isForSale, sold } = props;
+  const { title, images, isForSale, sold, category } = props;
 
   return (
     <Wrapper>
@@ -17,8 +17,8 @@ export const ListComponent = (props) => {
           </Main>
         </LinkBox>
       ) : (
-        <LinkBox exact to={`details/${title}`}>
-          <img src={process.env.PUBLIC_URL + `${images}`} height="250" />
+        <LinkBox exact to={`${category}/details/${title}`}>
+          <Img src={process.env.PUBLIC_URL + `${images}`} height="250" />
           <Main>
             <div>Details</div>
           </Main>
@@ -34,6 +34,12 @@ const Wrapper = styled.div`
   height: 250px;
   width: 250px;
   position: relative;
+`;
+
+const Img = styled.img`
+  overflow: hidden;
+  height: 250px;
+  width: 250px;
 `;
 const LinkBox = styled(Link)``;
 
