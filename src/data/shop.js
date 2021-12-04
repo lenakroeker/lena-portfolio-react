@@ -24,7 +24,7 @@ export const data = [
       "Part of a series of 20 abstract paintings from November 2021 entitled 'Instances of Peacefulness'..",
     id: 2,
     price: "80",
-    sold: false,
+    sold: true,
     isForSale: true,
     catagories: ["painting", "holiday2021"],
     tags: [],
