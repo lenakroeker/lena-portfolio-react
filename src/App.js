@@ -24,6 +24,7 @@ import Ovenside from "./painting-series/Ovenside";
 import Vips from "./painting-series/Vips";
 import Peacefulness from "./painting-series/Peacefulness";
 import Deconfinement from "./painting-series/Deconfinement";
+import Og from "./Og";
 
 import About from "./About";
 
@@ -83,6 +84,9 @@ function App() {
         </Route>
         <Route exact path="/shop/details/:title">
           <ShopDetailsPage shopdata={ShopData} />
+        </Route>
+        <Route exact path="/og">
+          <Og />
         </Route>
       </Switch>
       <Footer></Footer>
