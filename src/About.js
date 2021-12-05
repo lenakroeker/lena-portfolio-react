@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import MeLil from "./assets/about/melil.jpg";
-import MeBig from "./assets/about/mebig.jpg";
+import MeBig from "./assets/about/me-profile.jpg";
 
 export const Home = () => {
   return (
