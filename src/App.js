@@ -16,8 +16,14 @@ import DetailsPage from "./DetailsPage";
 import ShopDetailsPage from "./ShopDetailsPage";
 import Contact from "./contact";
 import ShopData from "./data/shop";
+import PeaceData from "./data/peacefulness";
+
 import EarlyWorkData from "./data/earlywork";
 import GarmentData from "./data/garments";
+import Ovenside from "./painting-series/Ovenside";
+import Vips from "./painting-series/Vips";
+import Peacefulness from "./painting-series/Peacefulness";
+import Deconfinement from "./painting-series/Deconfinement";
 
 import About from "./About";
 
@@ -33,8 +39,20 @@ function App() {
         <Route exact path="/paint">
           <Paintings />
         </Route>
+        <Route exact path="/paint/deconfinement">
+          <Deconfinement />
+        </Route>
+        <Route exact path="/paint/instances-of-peacefulness">
+          <Peacefulness data={PeaceData} />
+        </Route>
+        <Route exact path="/paint/vips">
+          <Vips />
+        </Route>
+        <Route exact path="/paint/ovenside">
+          <Ovenside />
+        </Route>
         <Route exact path="/garment">
-          <Garments garmentdata={GarmentData} />
+          <Garments data={GarmentData} />
         </Route>
         <Route exact path="/textile">
           <Textiles />

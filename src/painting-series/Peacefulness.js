@@ -1,10 +1,11 @@
-import styled, { keyframes } from "styled-components";
-import ListComponent from "./ListComponent";
+import styled from "styled-components";
+import ListComponent from "../ListComponent";
 
-export const Garment = ({ data }) => {
+export const Peacefulness = ({ data }) => {
+  console.log(data);
   return (
     <Wrapper>
-      <Title>Garment</Title>
+      <Title>Instances Of Peacefulness</Title>
       <Gallery>
         {data && data.length > 0 ? (
           <>
@@ -18,7 +19,8 @@ export const Garment = ({ data }) => {
                   materials={item.materials}
                   about={item.about}
                   images={item.images}
-                  category={item.category}
+                  isForSale={item.isForSale}
+                  sold={item.sold}
                 />
               );
             })}
@@ -47,4 +49,4 @@ const Gallery = styled.div`
   justify-content: center;
 `;
 
-export default Garment;
+export default Peacefulness;

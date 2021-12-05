@@ -38,9 +38,16 @@ const Wrapper = styled.div`
   margin: auto;
   width: 100%;
   padding: 20px 0;
+  @media (max-width: 768px) {
+    padding: 20px 0;
+    margin: 0px;
+    width: 90%;
+  }
 `;
 
-const Main = styled.div``;
+const Main = styled.div`
+  padding: 0;
+`;
 
 const Box = styled.div`
   width: 100%;
@@ -50,13 +57,13 @@ const Box = styled.div`
   justify-content: center;
   @media (max-width: 768px) {
     display: block;
+    margin: 0px;
   }
 `;
 
 const Img = styled.img`
   width: 80%;
   @media (max-width: 768px) {
-    width: 100%;
     height: auto;
     margin: 0;
   }
@@ -69,7 +76,7 @@ const Info = styled.div`
   width: 80%;
   @media (max-width: 768px) {
     width: 90%;
-    margin: 5%;
+    margin: 0;
   }
 `;
 

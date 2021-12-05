@@ -7,7 +7,7 @@ export const ListComponent = (props) => {
   return (
     <Wrapper>
       {isForSale ? (
-        <LinkBox exact to={`shop/details/${title}`}>
+        <LinkBox exact to={`/shop/details/${title}`}>
           <img src={process.env.PUBLIC_URL + `${images}`} height="250" />
           <Main>
             <div>

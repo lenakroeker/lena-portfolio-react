@@ -71,6 +71,7 @@ const Box = styled.div`
   justify-content: center;
   @media (max-width: 768px) {
     display: block;
+    margin: 0px;
   }
 `;
 
