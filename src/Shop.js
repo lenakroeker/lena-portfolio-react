@@ -9,21 +9,23 @@ export const Shop = ({ shopdata }) => {
       <Gallery>
         {shopdata && shopdata.length > 0 ? (
           <>
-            {shopdata.map((item) => {
-              return (
-                <ListComponent
-                  postId={item.id}
-                  title={item.title}
-                  dimensions={item.dimensions}
-                  date={item.date}
-                  materials={item.materials}
-                  about={item.about}
-                  images={item.images}
-                  isForSale={item.isForSale}
-                  sold={item.sold}
-                />
-              );
-            })}
+            {shopdata
+              .sort((a, b) => a.sold - b.sold)
+              .map((item) => {
+                return (
+                  <ListComponent
+                    postId={item.id}
+                    title={item.title}
+                    dimensions={item.dimensions}
+                    date={item.date}
+                    materials={item.materials}
+                    about={item.about}
+                    images={item.images}
+                    isForSale={item.isForSale}
+                    sold={item.sold}
+                  />
+                );
+              })}
           </>
         ) : (
           <div>Failed to Load</div>
